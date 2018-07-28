@@ -8,15 +8,20 @@ import android.widget.EditText;
 
 public class SecondActivity extends AppCompatActivity {
 
+    private static final String HABIT_NAME = "habit_name";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
     }
 
-    public void start(View view){
-        Intent startIntent = new Intent(this, ThirdActivity.class);
-        startActivity(startIntent);
+    public void ready(View view){
+        Intent secondIntent = new Intent(this, ThirdActivity.class);
+
+        secondIntent.putExtra(HABIT_NAME, this.getHabit(view));
+
+        startActivity(secondIntent);
     }
 
     public String getHabit(View view){
