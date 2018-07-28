@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hello world</string>
+    <string name="name">28 DAYS</string>
+    <string name="name_habit">Name your new habit:</string>
+</resources>
