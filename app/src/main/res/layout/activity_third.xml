@@ -27,7 +27,10 @@
         android:layout_height="47dp"
         android:text="Go to calendar"
         tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="169dp" />
+        tools:layout_editor_absoluteY="169dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        />
 
 
     <TextView
