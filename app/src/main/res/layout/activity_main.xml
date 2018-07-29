@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:background="#fdd481"
+        android:background="@drawable/gradient"
         tools:context=".MainActivity"
         android:layout_alignParentLeft="true">
 
