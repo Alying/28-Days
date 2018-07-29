@@ -45,6 +45,8 @@
             android:id="@+id/habitInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:ellipsize="start"
+            android:gravity="center"
             android:hint="NAME YO HABIT" />
     </android.support.design.widget.TextInputLayout>
 

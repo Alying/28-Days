@@ -4,8 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/screenBackground2"
+    android:background="@drawable/gradient"
     tools:context=".ThirdActivity">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:text="Date"
+        android:textAlignment="center"
+        android:textSize="45dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btngocalendar"
+        android:layout_width="266dp"
+        android:layout_height="47dp"
+        android:text="Go to calendar"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="169dp" />
+
 
     <TextView
         android:id="@+id/habitHeader"
@@ -25,9 +48,10 @@
         app:fontFamily="@font/oxygen_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.09" />
+        app:layout_constraintVertical_bias="0.151" />
 
     <TextView
         android:id="@+id/textView2"
@@ -37,7 +61,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="292dp"
+        android:layout_marginTop="264dp"
         android:gravity="center"
         android:text="STREAK COUNTER:"
         android:textColor="@android:color/holo_blue_dark"
