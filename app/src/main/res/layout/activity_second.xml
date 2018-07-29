@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="#ffd782"
     tools:context=".SecondActivity">
 
     <TextView
@@ -15,15 +15,13 @@
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
+        android:layout_marginTop="24dp"
         android:text="@string/name_habit"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="50sp"
         android:typeface="normal"
         app:fontFamily="@font/oxygen_bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -45,50 +43,8 @@
             android:id="@+id/habitInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ellipsize="start"
-            android:gravity="center"
             android:hint="NAME YO HABIT" />
     </android.support.design.widget.TextInputLayout>
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="314dp"
-        android:layout_height="306dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.966"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="298dp"
-            app:srcCompat="@drawable/ghosts"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="234dp" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="175dp"
-            android:layout_height="81dp"
-            android:layout_alignBottom="@+id/imageView2"
-            android:adjustViewBounds="false"
-            android:tint="@color/colorAccent"
-            app:srcCompat="@android:drawable/button_onoff_indicator_on"
-            tools:layout_editor_absoluteX="113dp"
-            tools:layout_editor_absoluteY="350dp" />
-
-
-    </RelativeLayout>
 
     <Button
         android:id="@+id/ready_button"
@@ -99,10 +55,10 @@
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
-        android:layout_marginStart="8dp"
-
-        android:layout_marginTop="8dp"
         android:onClick="ready"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="READY"
         android:textColor="#4af4db"
         android:textSize="30sp"
@@ -111,9 +67,7 @@
         android:typeface="sans"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.212"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        app:layout_constraintVertical_bias="0.884" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
 </android.support.constraint.ConstraintLayout>
