@@ -1,12 +1,16 @@
 package com.example.maggie.helloworld;
 
+import android.app.Dialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
+import android.widget.Toast;
+
 import java.lang.Integer;
+import java.util.ArrayList;
 
 import org.w3c.dom.Text;
 
@@ -29,6 +33,12 @@ public class ThirdActivity extends AppCompatActivity {
         headingView.setText(header);
     }
 
+    public void newStreak(){
+        //TextView headerView = (TextView) findViewById(R.id.habitHeader);
+        TextView count = (TextView) findViewById(R.id.streakNum);
+        count.setText(this.updateStreak());
+    }
+
     public void makeAlert(){
         AlertDialog.Builder builder = new AlertDialog.Builder(ThirdActivity.this);
         builder.setMessage("Were you successful today?");
@@ -38,7 +48,6 @@ public class ThirdActivity extends AppCompatActivity {
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
-                        ThirdActivity.updateStreak();
                         dialog.cancel();
                     }
                 });
