@@ -17,6 +17,30 @@ import org.w3c.dom.Text;
 public class ThirdActivity extends AppCompatActivity {
 
     private static final String HABIT_NAME = "habit_name";
+    private static final String TAG = "MainActivity";
+
+    private TextView thedate;
+    private Button btngocalendar;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        thedate = (TextView) findViewById(R.id.date);
+        btngocalendar = (Button) findViewById(R.id.btngocalendar);
+
+        Intent incoming = getIntent();
+        String date = incoming.getStringExtra("date");
+        thedate.setText(date);
+
+        btngocalendar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,CalendarActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
