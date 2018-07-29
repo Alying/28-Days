@@ -19,7 +19,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="C:\Users\alina\Downloads\peas.psd" />
+                                      <entry key="imageAsset" value="C:\Users\alina\Downloads\peas.png" />
+                                      <entry key="outputName" value="peas" />
                                     </map>
                                   </option>
                                 </PersistentState>
